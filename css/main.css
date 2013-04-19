@@ -1,0 +1,73 @@
+body{
+	color: #101010;
+	background: #d0d0d0;
+	font-family: 'Droid Serif', serif;
+	}
+div#wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	background: darkgrey
+}
+#logo {
+	width: 30%;
+	height: 28%;
+	float:left
+}
+a {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: arial;
+	color: black;
+	
+}
+p{
+font-size: 1.0em
+}
+a:hover {
+}
+ul li {
+	list-style-type: none;
+}
+div#header {height: 100px;}
+h1#logo{
+	font-family: 'Merienda', cursive;
+	font-size:2.5em;
+	text-shadow:6px 6px 6px blue;
+	margin: 0;
+	float: left;
+}
+ul#topnav {
+	margin-right: 5%;
+	width:40%;
+	float: right;
+}
+ul#topnav li{
+	display: inline;
+	
+}
+ul#topnav li a {
+	color: black;
+	padding: 3%;	
+}
+ul#topnav li a:hover{
+	color: white;
+	background: blue;
+}
+div#what{
+	-moz-column-count: 3;	
+}
+div#gallery {
+	height: 500px;
+	
+}
+
+ul#imagegallery li {
+}
+ul#imagegallery li img {
+	width:200px;
+	height:214px;
+	float: left;
+	margin: 4px;
+}
