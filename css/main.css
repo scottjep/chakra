@@ -3,7 +3,7 @@ body{
 	background: #d0d0d0;
 	font-family: 'Droid Serif', serif;
 	}
-div#wrapper {
+#wrapper {
 	width: 80%;
 	margin: 0 auto;
 	padding: 10px;
@@ -12,7 +12,8 @@ div#wrapper {
 #logo {
 	width: 30%;
 	height: 28%;
-	float:left
+	float:left;
+	border: thin solid red;
 }
 a {
 	text-decoration: none;
@@ -30,44 +31,170 @@ a:hover {
 ul li {
 	list-style-type: none;
 }
-div#header {height: 100px;}
-h1#logo{
+#header {height: 100px;}
+#logo{
 	font-family: 'Merienda', cursive;
 	font-size:2.5em;
 	text-shadow:6px 6px 6px blue;
 	margin: 0;
 	float: left;
 }
-ul#topnav {
+#topnav {
 	margin-right: 5%;
 	width:40%;
 	float: right;
 }
-ul#topnav li{
+#topnav li{
 	display: inline;
 	
 }
-ul#topnav li a {
+#topnav li a {
 	color: black;
 	padding: 3%;	
 }
-ul#topnav li a:hover{
+#topnav li a:hover{
 	color: white;
 	background: blue;
 }
-div#what{
+#what{
 	-moz-column-count: 3;	
 }
-div#gallery {
-	height: 500px;
-	
-}
 
-ul#imagegallery li {
+#imagegallery{
+	border: thin solid black;
+	width: 80%;
+	display:block;	
 }
-ul#imagegallery li img {
+#imagegallery li {
+}
+#imagegallery li img {
 	width:200px;
 	height:214px;
 	float: left;
 	margin: 4px;
 }
+#imagegallery li img:hover {
+-moz-box-shadow:    3px 3px 5px 6px blue;
+  -webkit-box-shadow: 3px 3px 5px 6px blue;
+  box-shadow:         3px 3px 5px 6px blue;
+}
+#footer {border: thin solid red; clear:both;}
+
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+		div#wrapper {
+	width: 95%;
+	margin: 0 auto;
+	padding: 10px;
+	background: grey;
+	
+}
+}
+
+
+/* for 700px or less */
+@media screen and (max-width: 700px) {
+
+	#wrapper {
+	width: 98%;
+	margin: 0 auto;
+	padding: 10px;
+	background: green; 
+	}
+	
+	#logo{
+	font-family: 'Merienda', cursive;
+	font-size:20px;
+	text-shadow:3px 3px 3px #d8d8d8;
+	margin: 0;
+	float: left;
+	}	
+ 
+}
+/*=================================================================== */
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	#wrapper {
+	width: 98%;
+	margin: 0 auto;
+	padding: 10px;
+	background: none; 
+	}
+	
+	#logo{
+	font-family: 'Merienda', cursive;
+	font-size:20px;
+	margin: 0;
+	float: left;
+	}	
+  	#what{
+	-moz-column-count: 2;	
+}
+	
+}
+
+/* for 320px or less */
+@media screen and (max-width: 320px) {
+
+	#wrapper {
+	width: 98%;
+	margin: 0 auto;
+	padding: 1%;
+	background: none; 
+	}
+	
+#logo{
+	font-family: 'Merienda', cursive;
+	font-size:20px;
+	margin: 0;
+	float: left;
+}	
+#topnav {
+	width:100%;
+	float: right;
+	border: thin solid pink;
+	clear: both;
+}
+#topnav li {
+	display:block;
+	border:thin solid white;
+	height: 3em;
+	margin: .5em 0;
+	background-color: rgba (29,28,82,0.8);
+	color: black;
+	text-align: center;
+	padding-top:1%;
+	font-size:17px;
+	height:10%;
+}
+	#topnav li a:hover{
+	color: white;
+	background: blue;
+}
+	#gallery{
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+}
+p{
+	font-size: .7em
+}
+li{
+	font-size: .7em
+}
+#what{
+	-moz-column-count: 1;	
+}
+#topnav {
+	margin: 0;
+	clear: both;
+}
+#topnav li{
+	display: block;
+	
+}
+h2{
+font-size:70%;}
+}
+
